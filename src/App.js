@@ -1,10 +1,15 @@
 import React from 'react';
 import './App.css';
+import Topbar from './components/Topbar';
+import Report from './components/Report';
+import Detailed from './components/Detailed';
 
 function App() {
   return (
     <div>
-      hello world
+        <Topbar />
+        <Report />
+        <Detailed />
     </div>
   );
 }
