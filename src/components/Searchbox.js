@@ -1,10 +1,12 @@
 import React from 'react';
-
-function Searchbox(){
+import '../css/searchbox.css';
+function Searchbox(props) {
     return(
-        <div class = "col-sm-6">
-            Searchbox
-        </div>
+        <form onSubmit={props.getWeather}>
+            <input type="text" name="city" placeholder="City" />
+            <input type="text" name="country" placeholder="Country"/>
+            <button>Get Weather</button>
+        </form>
     );
-}
+};
 export default Searchbox;
